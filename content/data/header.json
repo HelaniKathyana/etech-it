@@ -1,0 +1,192 @@
+{
+    "logo": {
+        "altText": "",
+        "styles": {
+            "self": {
+                "margin": [
+                    "mr-3"
+                ]
+            }
+        },
+        "type": "ImageBlock",
+        "url": "/images/etech_logo_hsja6o.jpg"
+    },
+    "primaryLinks": [
+        {
+            "type": "SubNav",
+            "label": "Company",
+            "altText": "Dropdown",
+            "links": [
+                {
+                    "type": "Link",
+                    "label": "Company",
+                    "altText": "",
+                    "url": "/company",
+                    "showIcon": false,
+                    "icon": "arrowRight",
+                    "iconPosition": "right",
+                    "style": "secondary",
+                    "elementId": ""
+                },
+                {
+                    "type": "Link",
+                    "label": "About",
+                    "altText": "",
+                    "url": "/about",
+                    "showIcon": false,
+                    "icon": "arrowRight",
+                    "iconPosition": "right",
+                    "style": "secondary",
+                    "elementId": ""
+                }
+            ],
+            "labelStyle": "secondary"
+        },
+        {
+            "type": "SubNav",
+            "label": "Cybersecurity & Compliance",
+            "altText": "Dropdown",
+            "links": [
+                {
+                    "type": "Link",
+                    "label": "Cybersecurity & Compliance",
+                    "altText": "",
+                    "url": "/cybersecurity-compliance",
+                    "showIcon": false,
+                    "icon": "arrowRight",
+                    "iconPosition": "right",
+                    "style": "secondary",
+                    "elementId": ""
+                },
+                {
+                    "type": "Link",
+                    "label": "HIPAA Compliance",
+                    "altText": "",
+                    "url": "/hipaa-compliance",
+                    "showIcon": false,
+                    "icon": "arrowRight",
+                    "iconPosition": "right",
+                    "style": "secondary",
+                    "elementId": ""
+                },
+                {
+                    "type": "Link",
+                    "label": "Security Risk Assessments",
+                    "altText": "",
+                    "url": "/security-risk-assessments",
+                    "showIcon": false,
+                    "icon": "arrowRight",
+                    "iconPosition": "right",
+                    "style": "secondary",
+                    "elementId": ""
+                },
+                {
+                    "type": "Link",
+                    "label": "Vulnerability Assessments",
+                    "altText": "",
+                    "url": "/vulnerability-assessments",
+                    "showIcon": false,
+                    "icon": "arrowRight",
+                    "iconPosition": "right",
+                    "style": "primary",
+                    "elementId": ""
+                },
+                {
+                    "type": "Link",
+                    "label": "Incident Response and Management",
+                    "altText": "",
+                    "url": "/incident-response-and-management",
+                    "showIcon": false,
+                    "icon": "arrowRight",
+                    "iconPosition": "right",
+                    "style": "primary",
+                    "elementId": ""
+                },
+                {
+                    "type": "Link",
+                    "label": "Employee Security Training",
+                    "altText": "",
+                    "url": "/employee-security-training",
+                    "showIcon": false,
+                    "icon": "arrowRight",
+                    "iconPosition": "right",
+                    "style": "primary",
+                    "elementId": ""
+                }
+            ],
+            "labelStyle": "secondary"
+        },
+        {
+            "label": "Technical Services",
+            "altText": "",
+            "links": [
+                {
+                    "label": "Technical Services",
+                    "url": "/technical-services",
+                    "icon": "arrowRight",
+                    "iconPosition": "right",
+                    "style": "secondary",
+                    "type": "Link"
+                },
+                {
+                    "label": "Managed IT",
+                    "url": "/managed-it-services/",
+                    "icon": "arrowRight",
+                    "iconPosition": "right",
+                    "style": "secondary",
+                    "type": "Link"
+                },
+                {
+                    "type": "Link",
+                    "label": "IT On Demand",
+                    "altText": "",
+                    "url": "/it-on-demand",
+                    "showIcon": false,
+                    "icon": "arrowRight",
+                    "iconPosition": "right",
+                    "style": "primary",
+                    "elementId": ""
+                }
+            ],
+            "labelStyle": "secondary",
+            "type": "SubNav"
+        },
+        {
+            "type": "Link",
+            "label": "Network Assessment",
+            "altText": "",
+            "url": "/network-assessment",
+            "showIcon": false,
+            "icon": "arrowRight",
+            "iconPosition": "right",
+            "style": "primary",
+            "elementId": ""
+        },
+        {
+            "label": "Blog",
+            "altText": "Blog",
+            "url": "/blog",
+            "icon": "arrowRight",
+            "iconPosition": "right",
+            "style": "secondary",
+            "type": "Link"
+        }
+    ],
+    "secondaryLinks": [
+        {
+            "type": "Button",
+            "label": "Contact",
+            "altText": "",
+            "url": "/contact",
+            "showIcon": false,
+            "icon": "arrowRight",
+            "iconPosition": "right",
+            "style": "secondary",
+            "elementId": ""
+        }
+    ],
+    "variant": "logo-left-primary-nav-right",
+    "colors": "bg-light-fg-dark",
+    "type": "Header",
+    "title": ""
+}

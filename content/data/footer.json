@@ -1,0 +1,190 @@
+{
+    "logo": {
+        "url": "/images/image.png",
+        "altText": "Logo light",
+        "type": "ImageBlock"
+    },
+    "text": "",
+    "primaryLinks": {
+        "title": "Our Services",
+        "links": [
+            {
+                "label": "Managed IT Services",
+                "altText": "",
+                "url": "/managed-it-services/",
+                "icon": "arrowRight",
+                "iconPosition": "right",
+                "style": "secondary",
+                "type": "Link"
+            },
+            {
+                "label": "IT On Demand",
+                "url": "/it-on-demand",
+                "icon": "arrowRight",
+                "iconPosition": "right",
+                "style": "secondary",
+                "type": "Link"
+            },
+            {
+                "label": "Network Security",
+                "url": "/network-assessment/",
+                "icon": "arrowRight",
+                "iconPosition": "right",
+                "style": "secondary",
+                "type": "Link"
+            },
+            {
+                "type": "Link",
+                "label": "Off-site Backup & Recovery",
+                "altText": "",
+                "url": "/managed-it-services/",
+                "showIcon": false,
+                "icon": "arrowRight",
+                "iconPosition": "right",
+                "style": "secondary",
+                "elementId": ""
+            },
+            {
+                "type": "Link",
+                "label": "Cloud Integration",
+                "altText": "",
+                "url": "/managed-it-services/",
+                "showIcon": false,
+                "icon": "arrowRight",
+                "iconPosition": "right",
+                "style": "secondary",
+                "elementId": ""
+            },
+            {
+                "type": "Link",
+                "label": "Hardware & Software",
+                "altText": "",
+                "url": "/managed-it-services/",
+                "showIcon": false,
+                "icon": "arrowRight",
+                "iconPosition": "right",
+                "style": "secondary",
+                "elementId": ""
+            },
+            {
+                "type": "Link",
+                "label": "Privacy & Compliance",
+                "altText": "",
+                "url": "/cybersecurity-compliance",
+                "showIcon": false,
+                "icon": "arrowRight",
+                "iconPosition": "right",
+                "style": "secondary",
+                "elementId": ""
+            }
+        ],
+        "type": "FooterLinksGroup"
+    },
+    "secondaryLinks": {
+        "title": "Navigation",
+        "links": [
+            {
+                "label": "Company",
+                "altText": "careers page",
+                "url": "/company",
+                "icon": "arrowRight",
+                "iconPosition": "right",
+                "style": "secondary",
+                "type": "Link"
+            },
+            {
+                "type": "Link",
+                "label": "Network Assessment",
+                "altText": "",
+                "url": "/network-assessment",
+                "showIcon": false,
+                "icon": "arrowRight",
+                "iconPosition": "right",
+                "style": "secondary",
+                "elementId": ""
+            },
+            {
+                "type": "Link",
+                "label": "Blog",
+                "altText": "",
+                "url": "/blog",
+                "showIcon": false,
+                "icon": "arrowRight",
+                "iconPosition": "right",
+                "style": "secondary",
+                "elementId": ""
+            },
+            {
+                "type": "Link",
+                "label": "Contact",
+                "altText": "",
+                "url": "/contact",
+                "showIcon": false,
+                "icon": "arrowRight",
+                "iconPosition": "right",
+                "style": "secondary",
+                "elementId": ""
+            },
+            {
+                "type": "Link",
+                "label": "Terms",
+                "altText": "",
+                "url": "/terms",
+                "showIcon": false,
+                "icon": "arrowRight",
+                "iconPosition": "right",
+                "style": "secondary",
+                "elementId": ""
+            }
+        ],
+        "type": "FooterLinksGroup"
+    },
+    "socialLinks": [
+        {
+            "altText": "Twitter link",
+            "url": "https://twitter.com/netlify",
+            "icon": "twitter",
+            "type": "Social"
+        },
+        {
+            "altText": "LinkedIn link",
+            "url": "https://www.linkedin.com/",
+            "icon": "linkedin",
+            "type": "Social"
+        },
+        {
+            "altText": "Email link",
+            "url": "mailto:info@etechitsupport.com",
+            "icon": "mail",
+            "type": "Social"
+        },
+        {
+            "type": "Social",
+            "altText": "Facebook link",
+            "url": "facebook.com",
+            "icon": "facebook",
+            "elementId": ""
+        }
+    ],
+    "legalLinks": [
+        {
+            "label": "Terms",
+            "url": "/terms",
+            "icon": "arrowRight",
+            "iconPosition": "right",
+            "style": "secondary",
+            "type": "Link"
+        },
+        {
+            "label": "Privacy",
+            "url": "/privacy-policy",
+            "icon": "arrowRight",
+            "iconPosition": "right",
+            "style": "secondary",
+            "type": "Link"
+        }
+    ],
+    "copyrightText": "ETECH\n",
+    "colors": "bg-dark-fg-light",
+    "type": "Footer"
+}

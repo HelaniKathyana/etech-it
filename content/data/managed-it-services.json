@@ -1,0 +1,36 @@
+{
+    "type": "Person",
+    "name": "Managed IT Services",
+    "role": "",
+    "image": {
+        "type": "ImageBlock",
+        "url": "/images/managedit-removebg-preview.png",
+        "altText": "",
+        "styles": {
+            "self": {
+                "borderRadius": "medium",
+                "margin": [
+                    "mb-8"
+                ]
+            }
+        }
+    },
+    "colors": "bg-light-fg-dark",
+    "styles": {
+        "self": {
+            "padding": [
+                "pt-6",
+                "pb-6",
+                "pl-6",
+                "pr-6"
+            ],
+            "textAlign": "center",
+            "borderColor": "border-neutral",
+            "borderStyle": "solid",
+            "borderWidth": 0,
+            "borderRadius": "none",
+            "justifyContent": "center"
+        }
+    },
+    "bio": "Working with a managed IT company brings you access to a range of skill sets, from those who can consult on the best wiring for your next IT project, to those with compliance expertise in your area of business. With us handling your IT, you’ll have one less thing to worry about.\n"
+}
