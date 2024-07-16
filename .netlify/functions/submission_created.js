@@ -4,30 +4,16 @@ const axios = require('axios');
 
 // Handle the lambda invocation
 exports.handler = async function (event, context, callback) {
-    try {
-        // const url = process.env.STACKBIT_CONTACT_FORM_SUBMISSION_URL;
+    event.preventDefault();
 
-        // if (!url) {
-        //     throw new Error('No Netlify Create URL specified');
-        // }
-
-        // const response = await axios({
-        //     method: 'post',
-        //     url,
-        //     data: JSON.parse(event.body)
-        // });
-
-        console.log("success")
-
-        callback(null, {
-            statusCode: 200,
-            //body: response.data.status
-            body: "response"
-        });
-    } catch (e) {
-        callback(null, {
-            statusCode: e?.response?.status ?? 500,
-            body: e?.response?.statusText ?? e.message
-        });
-    }
+  const myForm = event.target;
+  const formData = new FormData(myForm);
+  
+  fetch("/", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams(formData).toString(),
+  })
+    .then(() => console.log("Form successfully submitted"))
+    .catch((error) => alert(error));
 };
