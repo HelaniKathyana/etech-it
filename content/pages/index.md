@@ -688,7 +688,7 @@ sections:
           width: full
           type: TextareaFormControl
       action: ''
-      elementId: feedback
+      elementId: contact
       styles:
         self:
           padding:
@@ -709,7 +709,7 @@ sections:
         iconPosition: right
         style: primary
         elementId: ''
-      destination: ''
+      destination: madushansachintha@gmail.com
     badge:
       label: ''
       color: text-primary
