@@ -54,7 +54,7 @@ export default class FormBlock extends React.Component<any> {
         fetch('/__forms.html', {
             method: 'POST',
             headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-            body: encode({ 'form-name': 'contact', ...value })
+            body: encode({ ...value })
         })
             .then(() => {
                 this.setState({
@@ -118,7 +118,7 @@ export default class FormBlock extends React.Component<any> {
                     {...(fieldPath && { 'data-sb-field-path': '.fields' })}
                 >
                     <input type="hidden" name="form-name" value={elementId} />
-                    <input type="hidden" name="form-destination" value={destination || ''} />
+                    {/* <input type="hidden" name="form-destination" value={destination || ''} /> */}
                     {fields.map((field, index) => {
                         const modelName = field.__metadata.modelName;
                         if (!modelName) {
