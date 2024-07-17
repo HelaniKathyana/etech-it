@@ -687,7 +687,7 @@ sections:
           placeholder: Your message
           width: full
           type: TextareaFormControl
-      action: /.netlify/functions/submission_created
+      action: ''
       elementId: feedback
       styles:
         self:
