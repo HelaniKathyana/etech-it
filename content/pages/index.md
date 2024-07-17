@@ -688,7 +688,7 @@ sections:
           width: full
           type: TextareaFormControl
       action: ''
-      elementId: feedback
+      elementId: contact
       styles:
         self:
           padding:
