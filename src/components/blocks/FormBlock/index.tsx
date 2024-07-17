@@ -6,6 +6,11 @@ import { getComponent } from '../../components-registry';
 import { mapStylesToClassNames as mapStyles } from '../../../utils/map-styles-to-class-names';
 import SubmitButtonFormControl from './SubmitButtonFormControl';
 
+const encode = (data) => {
+    return Object.keys(data)
+        .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+        .join('&');
+};
 export default class FormBlock extends React.Component<any> {
     state = {
         submitted: false,
@@ -33,7 +38,24 @@ export default class FormBlock extends React.Component<any> {
             error: false
         });
 
-        this.formHandler(value, formAction)
+        // this.formHandler(value, formAction)
+        //     .then(() => {
+        //         this.setState({
+        //             submitted: true
+        //         });
+        //         this.formRef.current.reset();
+        //     })
+        //     .catch(() => {
+        //         this.setState({
+        //             error: true
+        //         });
+        //     });
+
+        fetch('/', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: encode({ 'form-name': 'contact', ...value })
+        })
             .then(() => {
                 this.setState({
                     submitted: true
@@ -45,6 +67,8 @@ export default class FormBlock extends React.Component<any> {
                     error: true
                 });
             });
+
+        event.preventDefault();
     }
 
     componentDidUpdate(prevProps, prevState) {
