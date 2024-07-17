@@ -28,7 +28,7 @@ export default class FormBlock extends React.Component<any> {
     }
 
     handleSubmit(event, formAction) {
-        event.preventDefault();
+        // event.preventDefault();
 
         const data = new FormData(this.formRef.current);
         const value = Object.fromEntries(data.entries());
@@ -51,7 +51,7 @@ export default class FormBlock extends React.Component<any> {
         //         });
         //     });
 
-        fetch('/', {
+        fetch('/__forms.html', {
             method: 'POST',
             headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
             body: encode({ 'form-name': 'contact', ...value })
