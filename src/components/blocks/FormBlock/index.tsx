@@ -27,7 +27,7 @@ export default class FormBlock extends React.Component<any> {
         });
     }
 
-    handleSubmit(event, formAction) {
+    handleSubmit = (event, formAction) => {
         // event.preventDefault();
 
         const data = new FormData(this.formRef.current);
@@ -51,7 +51,7 @@ export default class FormBlock extends React.Component<any> {
         //         });
         //     });
 
-        fetch('/__forms.html', {
+        fetch('/_forms.html', {
             method: 'POST',
             headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
             body: encode({ ...value })
@@ -69,7 +69,7 @@ export default class FormBlock extends React.Component<any> {
             });
 
         event.preventDefault();
-    }
+    };
 
     componentDidUpdate(prevProps, prevState) {
         if (!prevState.submitted && this.state.submitted) {
