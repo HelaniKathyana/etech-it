@@ -28,23 +28,33 @@ export default class FormBlock extends React.Component<any> {
         const data = new FormData(this.formRef.current);
         const value = Object.fromEntries(data.entries());
 
-        this.setState({
-            submitted: false,
-            error: false
-        });
+        // this.setState({
+        //     submitted: false,
+        //     error: false
+        // });
 
-        this.formHandler(value, formAction)
-            .then(() => {
-                this.setState({
-                    submitted: true
-                });
-                this.formRef.current.reset();
-            })
-            .catch(() => {
-                this.setState({
-                    error: true
-                });
-            });
+        // this.formHandler(value, formAction)
+        //     .then(() => {
+        //         this.setState({
+        //             submitted: true
+        //         });
+        //         this.formRef.current.reset();
+        //     })
+        //     .catch(() => {
+        //         this.setState({
+        //             error: true
+        //         });
+        //     });
+
+        fetch('/', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: data
+        })
+            .then(() => alert('Success!'))
+            .catch((error) => alert(error));
+
+        event.preventDefault();
     }
 
     componentDidUpdate(prevProps, prevState) {
@@ -83,8 +93,7 @@ export default class FormBlock extends React.Component<any> {
                 )}
                 name={elementId}
                 id={elementId}
-                // onSubmit={(e) => this.handleSubmit(e, action)}
-                method="post"
+                onSubmit={(e) => this.handleSubmit(e, action)}
                 data-netlify="true"
                 ref={this.formRef}
                 data-netlify-honeypot={formHoneypotName}
