@@ -106,8 +106,9 @@ export default class FormBlock extends React.Component<any> {
                     styles?.self?.borderRadius ? mapStyles({ borderRadius: styles?.self?.borderRadius }) : undefined
                 )}
                 name="feeback"
-                onSubmit={(e) => this.handleSubmit(e, action)}
-                data-netlify="true"
+                // onSubmit={(e) => this.handleSubmit(e, action)}
+                // data-netlify="true"
+                method="post"
             >
                 <div
                     className={classNames('w-full', 'flex', 'flex-wrap', 'gap-8', mapStyles({ justifyContent: styles?.self?.justifyContent ?? 'flex-start' }))}
@@ -134,11 +135,11 @@ export default class FormBlock extends React.Component<any> {
                         Submit
                     </button>
                 </div>
-                {submitButton && (
+                {/* {submitButton && (
                     <div className={classNames('mt-8', 'flex', mapStyles({ justifyContent: styles?.self?.justifyContent ?? 'flex-start' }))}>
                         <SubmitButtonFormControl {...submitButton} {...(fieldPath && { 'data-sb-field-path': '.submitButton' })} />
                     </div>
-                )}
+                )} */}
                 {this.state.submitted && <div className="mt-8 text-sm">Thank you, your message was sent.</div>}
                 {this.state.error && <div className="mt-6 text-sm text-red-500">Something went wrong, please try again.</div>}
             </form>
