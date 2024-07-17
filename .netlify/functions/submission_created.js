@@ -2,12 +2,6 @@
 
 const axios = require('axios');
 
-const encode = (data) => {
-    return Object.keys(data)
-        .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
-        .join('&');
-};
-
 // Handle the lambda invocation
 exports.handler = async function (event, context, callback) {
     try {
@@ -25,15 +19,17 @@ exports.handler = async function (event, context, callback) {
         fetch('/', {
             method: 'POST',
             headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-            body: encode({ 'form-name': 'feedback', ...JSON.parse(event.body) })
-        });
+            body: data
+        })
+            .then(() => alert('Success!'))
+            .catch((error) => alert(error));
 
         event.preventDefault();
 
-        callback(null, {
-            statusCode: 200,
-            body: response.data.status
-        });
+        // callback(null, {
+        //     statusCode: 200,
+        //     body: response.data.status
+        // });
     } catch (e) {
         callback(null, {
             statusCode: e?.response?.status ?? 500,
