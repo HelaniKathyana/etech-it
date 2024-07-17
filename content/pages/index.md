@@ -687,7 +687,7 @@ sections:
           placeholder: Your message
           width: full
           type: TextareaFormControl
-      action: /.netlify/functions/submission_created
+      action: ''
       elementId: feedback
       styles:
         self:
@@ -709,6 +709,7 @@ sections:
         iconPosition: right
         style: primary
         elementId: ''
+      destination: madushansachintha@gmail.com
     badge:
       label: ''
       color: text-primary
