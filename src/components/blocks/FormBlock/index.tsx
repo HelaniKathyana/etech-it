@@ -113,7 +113,7 @@ export default class FormBlock extends React.Component<any> {
                     className={classNames('w-full', 'flex', 'flex-wrap', 'gap-8', mapStyles({ justifyContent: styles?.self?.justifyContent ?? 'flex-start' }))}
                     {...(fieldPath && { 'data-sb-field-path': '.fields' })}
                 >
-                    <input type="hidden" name="form-name" value={elementId} />
+                    <input type="hidden" name="form-name" value="feedback" />
                     {/* <input type="hidden" name="form-destination" value={destination || ''} /> */}
                     {fields.map((field, index) => {
                         const modelName = field.__metadata.modelName;
