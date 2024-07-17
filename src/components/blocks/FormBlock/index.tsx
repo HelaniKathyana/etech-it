@@ -83,7 +83,8 @@ export default class FormBlock extends React.Component<any> {
                 )}
                 name={elementId}
                 id={elementId}
-                onSubmit={(e) => this.handleSubmit(e, action)}
+                // onSubmit={(e) => this.handleSubmit(e, action)}
+                method="post"
                 data-netlify="true"
                 ref={this.formRef}
                 data-netlify-honeypot={formHoneypotName}
