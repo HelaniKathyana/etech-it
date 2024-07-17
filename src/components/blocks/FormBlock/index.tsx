@@ -105,21 +105,17 @@ export default class FormBlock extends React.Component<any> {
                         : undefined,
                     styles?.self?.borderRadius ? mapStyles({ borderRadius: styles?.self?.borderRadius }) : undefined
                 )}
-                name={elementId}
-                id={elementId}
+                name="feeback"
                 onSubmit={(e) => this.handleSubmit(e, action)}
                 data-netlify="true"
-                ref={this.formRef}
-                data-netlify-honeypot={formHoneypotName}
-                data-sb-field-path={fieldPath}
             >
                 <div
                     className={classNames('w-full', 'flex', 'flex-wrap', 'gap-8', mapStyles({ justifyContent: styles?.self?.justifyContent ?? 'flex-start' }))}
                     {...(fieldPath && { 'data-sb-field-path': '.fields' })}
                 >
-                    <input type="hidden" name="form-name" value={elementId} />
+                    {/* <input type="hidden" name="form-name" value={elementId} /> */}
                     {/* <input type="hidden" name="form-destination" value={destination || ''} /> */}
-                    {fields.map((field, index) => {
+                    {/* {fields.map((field, index) => {
                         const modelName = field.__metadata.modelName;
                         if (!modelName) {
                             throw new Error(`form field does not have the 'modelName' property`);
@@ -129,7 +125,14 @@ export default class FormBlock extends React.Component<any> {
                             throw new Error(`no component matching the form field model name: ${modelName}`);
                         }
                         return <FormControl key={index} {...field} {...(fieldPath && { 'data-sb-field-path': `.${index}` })} />;
-                    })}
+                    })} */}
+                    <input type="hidden" name="form-name" value="feedback" />
+                    <input name="name" type="text" placeholder="Name" required className="input input-bordered" />
+                    <input name="email" type="text" placeholder="Email (optional)" className="input input-bordered" />
+                    <input name="message" type="text" placeholder="Message" required className="input input-bordered" />
+                    <button className="btn btn-primary" type="submit">
+                        Submit
+                    </button>
                 </div>
                 {submitButton && (
                     <div className={classNames('mt-8', 'flex', mapStyles({ justifyContent: styles?.self?.justifyContent ?? 'flex-start' }))}>
