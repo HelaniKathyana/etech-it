@@ -109,6 +109,7 @@ export default class FormBlock extends React.Component<any> {
                 // onSubmit={(e) => this.handleSubmit(e, action)}
                 // data-netlify="true"
                 method="post"
+                action="/_forms.html"
             >
                 <div
                     className={classNames('w-full', 'flex', 'flex-wrap', 'gap-8', mapStyles({ justifyContent: styles?.self?.justifyContent ?? 'flex-start' }))}
