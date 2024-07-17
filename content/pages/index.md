@@ -709,6 +709,7 @@ sections:
         iconPosition: right
         style: primary
         elementId: ''
+      destination: madushansachintha@gmail.com
     badge:
       label: ''
       color: text-primary
