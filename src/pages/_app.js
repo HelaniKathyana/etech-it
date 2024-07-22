@@ -4,17 +4,13 @@ import Script from 'next/script'
  
 export default function MyApp({ Component, pageProps }) {
     return (
-        <>
-      <Script
-        src="./drift.js"
-        onLoad={() => {
-          console.log('Script has loaded')
-        }}
-      />
-      <WithNinetailedProvider>
+    <>
+    <Drift appId="2g8vxhkczgcv" />
+    <WithNinetailedProvider>
             <Component {...pageProps} />
         </WithNinetailedProvider>
     </>
+      
         
     );
 }
